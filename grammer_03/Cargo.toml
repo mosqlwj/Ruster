@@ -1,0 +1,30 @@
+[package]
+name = "grammer_03"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fib"
+path = "src/fib.rs"
+
+[[bin]]
+name = "event"
+path = "src/event.rs"
+
+[[bin]]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "scrape_url_with_error_handling"
+path = "src/scrape_url_with_error_handling.rs"
+
+[[bin]]
+name = "scrape_url_with_args"
+path = "src/scrape_url_with_args.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", default-features = false, features = ["rustls-tls", "blocking"] }
+html2md = "0.2"
