@@ -1,1 +1,2 @@
-/target
+./scrape_url/target/*
+./scrape_url/rust.md
